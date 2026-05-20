@@ -24,18 +24,18 @@ export default function Hero() {
         {/* Top Text */}
         <div className="flex justify-between">
           <div>
-            <h2 className="text-h6 leading-none">
+            <h6 className="text-h6 leading-none">
               Crafting Brands That
               <br />
               Feel Human
-            </h2>
+            </h6>
           </div>
 
-          <div className="text-h6 text-right">
+          <h6 className="text-h6 text-right">
             BRAND STRATEGIST
             <br />
             freelancer
-          </div>
+          </h6>
         </div>
 
         <div className="pt-53 flex justify-between">
@@ -45,6 +45,7 @@ export default function Hero() {
               emotional impact.
             </p>
           </div>
+          {/* Social media */}
           <div className="flex justify-between items-end w-[100px] uppercase">
             <p className="text-b2">li</p>
             <p className="text-b2">x</p>
