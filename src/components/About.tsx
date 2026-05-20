@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="relative top-0 h-screen w-full overflow-hidden bg-white">
+    <section className="relative h-[500vh] w-full bg-white">
       {/* Content */}
-      <div className="z-10 max-w-[1200px] mx-auto h-[100vh] flex content-center">
-        <div className="sticky top-0 flex justify-between items-center w-full h-[100vh]">
+      <div className="sticky top-0 z-10 max-w-[1200px] mx-auto h-[100vh] flex content-center">
+        <div className=" flex justify-between items-center w-full">
           <div className="flex flex-col items-center gap-8">
             <div className="relative w-[190px] h-[166px] ">
               <Image
@@ -17,11 +17,12 @@ export default function About() {
                 className=" object-cover"
               />
             </div>
-            <div className="">
+            <div>
               <h6 className="text-h6 text-n400">since middle of 2026</h6>
             </div>
           </div>
-          <div className="">
+          {/* Paragraph Items */}
+          <div className="h-[220px]">
             <h2 className="text-h2 text-black">
               A blend of strategic clarity and narrative
             </h2>
