@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Portfolio() {
   return (
-    <section className="relative h-[500vh] w-full bg-white typography-base">
+    <section className="relative h-[500vh] w-full bg-base typography-base ">
       {/* Content */}
-      <div className="sticky top-0  h-[100vh] ">
+      <div className="sticky top-0  h-[100vh]">
         <div className="absolute w-full flex content-center">
           {/* Image Bg */}
           <Image
@@ -17,7 +17,7 @@ export default function Portfolio() {
           {/* Overlay */}
           <div className="absolute inset-0 bg-n500/25 z-10"></div>
           {/* Content items */}
-          <div className="relative flex flex-col justify-between w-[1200px] h-[100vh] mx-auto z-10 pt-[80px] pb-[80px]">
+          <div className="relative flex flex-col justify-between w-[1200px] h-[100vh] mx-auto z-10 pt-[80px] pb-[80px] section-padding">
             <div className="flex items-start justify-between">
               <p className="text-h6">©2025</p>
               <h6 className="text-h6">KEEP SCROLLING</h6>
@@ -50,7 +50,7 @@ export default function Portfolio() {
           {/* Overlay */}
           <div className="absolute inset-0 bg-n500/25 z-8"></div>
           {/* Content items */}
-          <div className="relative flex flex-col justify-between w-[1200px] h-[100vh] mx-auto z-8 pt-[80px] pb-[80px]">
+          <div className="relative flex flex-col justify-between w-[1200px] h-[100vh] mx-auto z-8 pt-[80px] pb-[80px] section-padding">
             <div className="flex items-start justify-between">
               <p className="text-h6">©2025</p>
               <h6 className="text-h6">KEEP SCROLLING</h6>
@@ -83,7 +83,7 @@ export default function Portfolio() {
           {/* Overlay */}
           <div className="absolute inset-0 bg-n500/25 z-6"></div>
           {/* Content items */}
-          <div className="relative flex flex-col justify-between w-[1200px] h-[100vh] mx-auto z-6 pt-[80px] pb-[80px]">
+          <div className="relative flex flex-col justify-between w-[1200px] h-[100vh] mx-auto z-6 pt-[80px] pb-[80px] section-padding">
             <div className="flex items-start justify-between">
               <p className="text-h6">©2025</p>
               <h6 className="text-h6">KEEP SCROLLING</h6>
@@ -116,7 +116,7 @@ export default function Portfolio() {
           {/* Overlay */}
           <div className="absolute inset-0 bg-n500/25 z-4"></div>
           {/* Content items */}
-          <div className="relative flex flex-col justify-between w-[1200px] h-[100vh] mx-auto z-4 pt-[80px] pb-[80px]">
+          <div className="relative flex flex-col justify-between w-[1200px] h-[100vh] mx-auto z-4 pt-[80px] pb-[80px] section-padding">
             <div className="flex items-start justify-between">
               <p className="text-h6">©2025</p>
               <h6 className="text-h6">KEEP SCROLLING</h6>
@@ -149,7 +149,7 @@ export default function Portfolio() {
           {/* Overlay */}
           <div className="absolute inset-0 bg-n500/25 z-2"></div>
           {/* Content items */}
-          <div className="relative flex flex-col justify-between w-[1200px] h-[100vh] mx-auto z-2 pt-[80px] pb-[80px]">
+          <div className="relative flex flex-col justify-between w-[1200px] h-[100vh] mx-auto z-2 pt-[80px] pb-[80px] section-padding">
             <div className="flex items-start justify-between">
               <p className="text-h6">©2025</p>
               <h6 className="text-h6">KEEP SCROLLING</h6>
@@ -172,7 +172,7 @@ export default function Portfolio() {
         </div>
         {/* {Button circle} */}
         <div className="absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 ">
-          <div className="flex justify-center items-center rounded-full bg-base/4 backdrop-blur-xs border-1 border-base/40 w-[80px] h-[80px] ">
+          <div className="flex justify-center items-center rounded-full bg-base/4 backdrop-blur-xs border-1 border-base/40 w-[80px] h-[80px]">
             <Image
               src="/icons/arrow-up-right.svg"
               alt="arrow up"

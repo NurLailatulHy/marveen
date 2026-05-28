@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="sticky top-0 min-h-screen w-full">
+    <section className="sticky top-0 min-h-screen w-full section-padding">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -18,8 +18,9 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative pt-2 z-10 max-w-[1200px] mx-auto h-full flex flex-col typography-base">
-        <div className="w-full">
-          <h1 className="text-h1-xl">ALTHEA MARVEEN</h1>
+        <div className="flex justify-between w-full">
+          <h1 className="text-h1-xl">ALTHEA</h1>
+          <h1 className="text-h1-xl">MARVEEN</h1>
         </div>
         {/* Top Text */}
         <div className="flex justify-between">

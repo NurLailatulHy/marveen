@@ -5,10 +5,10 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <div className="absolute bottom-6 inset-x-0 flex justify-center z-50">
-      <div className="relative w-full max-w-[1200px]">
+    <div className="absolute w-full bottom-6 inset-x-0 flex justify-center z-50 section-padding">
+      <div className="relative w-[1200px]">
         {/* Navbar */}
-        <div className="flex justify-between items-center typography-base px-10 h-[50px] rounded-full bg-white/10 backdrop-blur-md border border-white/20">
+        <div className="flex justify-between items-center typography-base px-10 h-[50px] rounded-full bg-base/10 backdrop-blur-md border-1 border-base/30">
           <div className="flex gap-38">
             <span>ABOUT</span>
             <span>SERVICES</span>
@@ -23,7 +23,7 @@ export default function Navbar() {
         <div
           className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-6
                     w-[90px] h-[90px] rounded-full 
-                    bg-white/10 backdrop-blur-md border border-white/20 
+                    bg-base/10 backdrop-blur-md border-1 border-base/30
                     flex items-center justify-center"
         >
           <Image src="/icons/arrow.svg" alt="arrow" width={48} height={48} />

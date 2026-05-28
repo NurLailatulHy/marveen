@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="relative h-[500vh] w-full bg-white">
+    <section className="relative h-[500vh] w-full bg-base section-padding">
       {/* Content */}
       <div className="sticky top-0 z-10 max-w-[1200px] mx-auto h-[100vh] flex content-center">
         <div className=" flex justify-between items-center w-full">
