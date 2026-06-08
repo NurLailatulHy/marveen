@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Albert_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 const albertSans = Albert_Sans({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className="flex flex-col body">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

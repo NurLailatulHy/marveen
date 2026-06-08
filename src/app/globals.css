@@ -1,20 +1,18 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --color-base: #ffffff;
   --color-n100: #f2f2f2;
   --color-n200: #e6e6e6;
   --color-n300: #b5b5b5;
   --color-n400: #6c6c6c;
   --color-n500: #171717;
-}
+} */
 
 @theme inline {
   --color-background: var(--color-base);
   --color-foreground: var(--color-n500);
   --font-sans: var(--font-albert);
-  /* --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono); */
 }
 
 @theme {
@@ -42,17 +40,28 @@
   .typography-dark {
     color: var(--color-n500);
   }
-
-  /* .typography a:hover {
-    color: var(--color-blue-800);
-  } */
 }
 
 @layer utilities {
   /* Size font */
   .text-h1-xl {
-    font-size: 142px;
+    font-size: 70px;
     line-height: 1;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+  }
+
+  .text-h1-l {
+    font-size: 70px;
+    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+  }
+
+  .text-h1-m {
+    font-size: 40px;
+    line-height: 1.1;
     font-weight: 500;
     letter-spacing: -0.04em;
     text-transform: uppercase;
@@ -67,7 +76,7 @@
   }
 
   .text-h2 {
-    font-size: 40px;
+    font-size: 26px;
     line-height: 1.1;
     font-weight: 500;
     letter-spacing: -0.04em;
@@ -124,29 +133,82 @@
     font-weight: 500;
   }
 
+  .text-btn2 {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .text-btn3 {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .container-custom {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
   /* Padding Section */
   .section-padding {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-inline: 30px;
+  }
+
+  @media (min-width: 640px) {
+    .section-padding {
+      padding-inline: 40px;
+    }
+    .text-h1-xl {
+      font-size: 80px;
+    }
+    .text-h1-l {
+      font-size: 80px;
+    }
+    .text-h1-m {
+      font-size: 50px;
+    }
+    .text-h2 {
+      font-size: 36px;
+    }
   }
 
   @media (min-width: 768px) {
     .section-padding {
-      padding-left: 40px;
-      padding-right: 40px;
+      padding-inline: 60px;
+    }
+    .text-h1-xl {
+      font-size: 85px;
+    }
+    .text-h1-l {
+      font-size: 100px;
+    }
+    .text-h1-m {
+      font-size: 55px;
     }
   }
 
   @media (min-width: 1024px) {
-    .section-padding {
-      padding-left: 60px;
-      padding-right: 60px;
+    .text-h1-xl {
+      font-size: 142px;
+    }
+    .text-h1-l {
+      font-size: 100px;
+    }
+    .text-h1-m {
+      font-size: 90px;
+    }
+    .text-h2 {
+      font-size: 40px;
     }
   }
 }
 
 body {
-  background: var(--color-base);
+  background-color: var(--color-base);
   color: var(--color-n500);
   font-family: var(--font-albert);
 }
