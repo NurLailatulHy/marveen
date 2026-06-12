@@ -21,18 +21,6 @@ export default function TestimonialItem({
         {/* Left */}
         <div className="flex flex-col justify-between w-full md:w-[610px] h-dvh">
           <Pagination total={total} activeIndex={index} />
-          {/* <div className="flex items-center gap-5">
-            <span className="text-h6">
-              {String(index + 1).padStart(2, "0")}
-              {String(testimonial.sort_order).padStart(2, "0")}
-            </span>
-
-            <div className="h-[2px] w-[60px] bg-n500" />
-
-            <span className="text-h6 text-n300">
-              {String(total).padStart(2, "0")}
-            </span>
-          </div> */}
 
           <h2 className="text-h2">“{testimonial.quote}”</h2>
 
