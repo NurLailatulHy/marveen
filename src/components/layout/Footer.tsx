@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
-    <section className="relative w-full bg-base section-padding flex content-center pt-[100px] pb-[40px]">
+    <section className="relative w-full bg-base section-padding flex content-center">
       {/* Content */}
-      <div className="z-20 w-[1200px] ">
-        <div className="w-full h-[354px] flex flex-col justify-between items-center">
-          <div className="w-full flex justify-between items-center typography-dark  h-[50px]">
+      <div className="z-20 container-custom pt-[100px] pb-[40px]">
+        <div className="relative w-full md:h-[354px] h-[500px] flex flex-col justify-between items-center gap-[20px]">
+          <div className="w-full flex flex-col md:flex-row justify-between items-center typography-dark md:h-[50px] h-auto">
             <span className="text-btn2">HOME</span>
             <span className="text-n300">|</span>
             <span className="text-btn2">ABOUT</span>
@@ -15,15 +15,15 @@ export default function Footer() {
             <span className="text-n300">|</span>
             <span className="text-btn2">PROCESS</span>
           </div>
-          <div className="flex justify-between text-h1-xl">
+          <div className="w-full flex flex-col md:flex-row items-center justify-between text-h1-xl">
             <h1>ALTHEA</h1>
             <h1>Marveen</h1>
           </div>
-          <div className="w-full flex justify-between border-t-1 border-n300 pt-[24px]">
-            <div className="text-btn3">
+          <div className="w-full flex flex-col md:flex-row justify-between items-center border-t-1 border-n300 gap-[40px] pt-[24px]">
+            <div className="text-btn3 text-center md:text-start items-center order-last md:order-first">
               © 2025 CREATED BY 8AM. ALL RIGHTS RESERVED
             </div>
-            <div className="w-[261px] flex justify-between ">
+            <div className="w-[261px] flex flex-col md:flex-row justify-between items-center order-first md:order-last">
               <span className="text-btn3">404</span>
               <span className="text-n300">|</span>
               <span className="text-btn3">LICENSE</span>
