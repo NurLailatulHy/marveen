@@ -41,6 +41,7 @@ export default function TestimonialItem({
             src={testimonial.image}
             alt={testimonial.author}
             fill
+            sizes="100vw"
             className="object-cover"
           />
         </div>

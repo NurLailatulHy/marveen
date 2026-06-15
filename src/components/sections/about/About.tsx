@@ -5,14 +5,14 @@ export default async function About() {
   const { aboutItems, aboutSection } = await getAboutData();
 
   return (
-    <section className="relative h-[500vh] w-full bg-base section-padding">
+    <section
+      id="about"
+      className="relative h-[500vh] w-full bg-base section-padding"
+    >
       <div className="sticky top-0 z-10 container-custom h-dvh flex justify-center items-center">
-
         <div className="flex flex-col lg:flex-row lg:justify-between items-center w-full">
-
           {/* Images */}
           <div className="flex flex-col items-center gap-6">
-
             <div className="relative w-[190px] h-[166px]">
               {aboutItems.map((item, index) => (
                 <Image
@@ -20,15 +20,13 @@ export default async function About() {
                   src={item.image}
                   alt={item.description}
                   fill
+                  sizes="190px"
                   className={`absolute object-cover z-${index + 1}`}
                 />
               ))}
             </div>
 
-            <h6 className="text-h6 text-n400">
-              {aboutSection?.title}
-            </h6>
-
+            <h6 className="text-h6 text-n400">{aboutSection?.title}</h6>
           </div>
 
           {/* Description */}
@@ -39,9 +37,7 @@ export default async function About() {
               </h2>
             ))}
           </div>
-
         </div>
-
       </div>
     </section>
   );

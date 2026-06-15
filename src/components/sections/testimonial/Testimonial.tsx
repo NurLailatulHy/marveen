@@ -10,9 +10,7 @@ export default async function Testimonial() {
       <div className="sticky top-0 h-dvh overflow-hidden">
         {/* Background Title */}
         <div className="absolute inset-0 flex justify-center items-center">
-          <h2 className="text-h2">
-            What Clients Say
-          </h2>
+          <h2 className="text-h2">What Clients Say</h2>
         </div>
 
         {testimonials.map((testimonial, index) => (
@@ -89,7 +87,7 @@ export default async function Testimonial() {
                 src="/images/image-10.webp"
                 alt="image"
                 fill
-                priority
+                
                 className="object-cover"
               />
             </div>

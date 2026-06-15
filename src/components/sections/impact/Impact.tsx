@@ -38,6 +38,7 @@ export default async function Impact() {
                         src={item.image}
                         alt={item.label}
                         fill
+                        sizes="90px"
                         className="object-cover"
                       />
                     </div>
