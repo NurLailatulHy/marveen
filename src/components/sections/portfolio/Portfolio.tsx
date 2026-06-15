@@ -1,55 +1,20 @@
 import Image from "next/image";
 import PortfolioItem from "./PortfolioItem";
+import { getPortfolio } from "@/services/portfolio.service";
 
-const portfolioItems = [
-  {
-    image: "/images/portfolio-1.webp",
-    category: "jewelry maker",
-    service: "VISUAL IDENTITY DIRECTION",
-    title: "EMBER ATELIER",
-    index: "1",
-  },
-  {
-    image: "/images/portfolio-2.webp",
-    category: "skincare brand",
-    service: "brand positioning & messaging",
-    title: "SOLVONA SKIN LAB",
-    index: "2",
-  },
-  {
-    image: "/images/portfolio-3.webp",
-    category: "life coach",
-    service: "brand positioning & messaging",
-    title: "MARELL COACHING",
-    index: "3",
-  },
-  {
-    image: "/images/portfolio-4.webp",
-    category: "agritech startup",
-    service: "BRAND STRATEGY INTENSIVE",
-    title: "ROOTSPRO",
-    index: "4",
-  },
-  {
-    image: "/images/image-3.webp",
-    category: "home decor",
-    service: "VISUAL IDENTITY DIRECTION",
-    title: "VIDALEE HOME",
-    index: "5",
-  },
-];
+export default async function Portfolio() {
+  const portfolioItems = await getPortfolio();
 
-export default function Portfolio() {
   return (
-    <section className="relative h-[500vh] w-full bg-base typography-base">
-      <div className="sticky top-0 h-dvh">
-        {portfolioItems.map((item, index) => (
+    <section
+      id="portfolio"
+      className="relative h-[500vh] w-full bg-base typography-base"
+    >
+      <div className="sticky top-0 h-dvh flex content-center">
+        {portfolioItems.map((portfolio, index) => (
           <PortfolioItem
-            key={item.title}
-            image={item.image}
-            category={item.category}
-            service={item.service}
-            title={item.title}
+            key={portfolio.id}
+            portfolio={portfolio}
             index={index + 1}
             total={portfolioItems.length}
             zIndex={(portfolioItems.length - index) * 2}
