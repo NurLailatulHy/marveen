@@ -66,7 +66,7 @@ export default function Navbar() {
         >
           <span className="flex flex-col-sm gap-[4px] text-3xl typography-base">
             <div>−</div>
-            {/* <div>−</div> */}
+            <div>−</div>
           </span>
         </button>
       </div>
